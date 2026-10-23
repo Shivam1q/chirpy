@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm tsc",
+    "build": "npx tsc",
     "start": "node dist/index.js",
     "dev": "npx tsc && node dist/index.js"
   },
@@ -15,7 +15,12 @@
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.4",
+    "drizzle-kit": "^0.31.11",
     "express": "^5.2.1",
     "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.4",
+    "postgres": "^3.4.9"
   }
 }
